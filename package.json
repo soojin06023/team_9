@@ -4,7 +4,11 @@
   "description": "Hackaton",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "scan": "node src/scan.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+  
+    "compare": "node src/compare.js",
+    "a11y": "npm run scan && npm run compare"
   },
   "repository": {
     "type": "git",
@@ -20,6 +24,7 @@
   "homepage": "https://github.com/soojin06023/team_9#readme",
   "devDependencies": {
     "@axe-core/playwright": "^4.12.1",
+    "glob": "^13.0.6",
     "playwright": "^1.61.1"
   }
 }
